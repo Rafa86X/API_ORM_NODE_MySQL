@@ -1,0 +1,16 @@
+INSERT INTO `melinda`.`autorizacoes` (`id`, `cargo`, `autorizacao`,`createdAt`,`updatedAt`) VALUES 
+('1', 'gerente', 'funcionarios_c funcionarios_r funcionarios_u funcionarios_d', now(), now()),
+('2', 'atendente','nada',now(), now()),
+('3', 'estoquista','nada',now(), now()),
+('4', 'caixa','nada',now(), now());
+
+
+INSERT INTO `melinda`.`funcionarios` (`id`,`cargo`, `nome`, `sobrenome`, `cpf`, `data_nascimento`, `telefone_01`, `telefone_02`, `rua`, `numero`, `cep`, `bairro`, `cidade`, `estado`, `email`,`senha`, `ativo`,`createdAt`,`updatedAt`) 
+VALUES (1000,'1', 'Maria', 'Manga', '11122233355', '1990-10-15', '51988887777', '51955554444', 'r dev', '2589', '11236894', 'b dev', 'cdev', 'rs', 'email@email.com','$2b$08$aWSXQvGljNt81Atos29ivu6YBux0DRmomWt1PlWroNaa6oAmNqR3m', '1',now(),now());
+
+
+insert into produtos (id,nome_produto,descricao,preco,createdAt,updatedAt) values
+(100100,'Almoço normal','Almoço normal a quillo',50.00,now(),now()),
+(100200,'Cerveja Scoll','Scoll Latão 473 ml',10.00,now(),now()),
+(100301,'Suco de Uva','Garafa de suco 600 ml',5.00,now(),now()),
+(100302,'Suco de Laranja','Garafa de suco 600 ml',5.00,now(),now());
